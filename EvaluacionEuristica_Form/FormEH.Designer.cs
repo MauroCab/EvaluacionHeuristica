@@ -772,6 +772,7 @@
             // 
             // cBoxImag
             // 
+            this.cBoxImag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxImag.FormattingEnabled = true;
             this.cBoxImag.Items.AddRange(new object[] {
             "1",
@@ -791,6 +792,7 @@
             // 
             // cBoxDisGr
             // 
+            this.cBoxDisGr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxDisGr.FormattingEnabled = true;
             this.cBoxDisGr.Items.AddRange(new object[] {
             "1",
@@ -851,6 +853,7 @@
             this.BttSaveConfig.TabIndex = 11;
             this.BttSaveConfig.Text = "Guardar";
             this.BttSaveConfig.UseVisualStyleBackColor = true;
+            this.BttSaveConfig.Click += new System.EventHandler(this.BttSaveConfig_Click);
             // 
             // panel5
             // 
@@ -868,6 +871,7 @@
             // 
             // cBoxArBusq
             // 
+            this.cBoxArBusq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxArBusq.FormattingEnabled = true;
             this.cBoxArBusq.Items.AddRange(new object[] {
             "1",
@@ -887,6 +891,7 @@
             // 
             // cBoxRes
             // 
+            this.cBoxRes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxRes.FormattingEnabled = true;
             this.cBoxRes.Items.AddRange(new object[] {
             "1",
@@ -954,6 +959,7 @@
             // 
             // cBoxInfo
             // 
+            this.cBoxInfo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxInfo.FormattingEnabled = true;
             this.cBoxInfo.Items.AddRange(new object[] {
             "1",
@@ -973,6 +979,7 @@
             // 
             // cBoxIntern
             // 
+            this.cBoxIntern.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxIntern.FormattingEnabled = true;
             this.cBoxIntern.Items.AddRange(new object[] {
             "1",
@@ -1039,6 +1046,7 @@
             // 
             // cBoxArNav
             // 
+            this.cBoxArNav.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxArNav.FormattingEnabled = true;
             this.cBoxArNav.Items.AddRange(new object[] {
             "1",
@@ -1058,6 +1066,7 @@
             // 
             // cBoxOri
             // 
+            this.cBoxOri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxOri.FormattingEnabled = true;
             this.cBoxOri.Items.AddRange(new object[] {
             "1",

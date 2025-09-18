@@ -12,6 +12,15 @@ namespace EvaluacionEuristica_Form
 {
     public partial class FormEH : Form
     {
+        int NotaMax;
+        int NotaMaxDisGr;
+        int NotaMaxImag;
+        int NotaMaxArNav;
+        int NotaMaxOri;
+        int NotaMaxInfo;
+        int NotaMaxIntern;
+        int NotaMaxArBusq;
+        int NotaMaxRes;
         public FormEH()
         {
             InitializeComponent();
@@ -95,6 +104,23 @@ namespace EvaluacionEuristica_Form
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void BttSaveConfig_Click(object sender, EventArgs e)
+        {
+            if (cBoxDisGr.Text != "" && cBoxImag.Text != "" && cBoxArNav.Text != "" && cBoxOri.Text != "" && cBoxInfo.Text != "" && cBoxIntern.Text != "" && cBoxArBusq.Text != "" && cBoxRes.Text != "")
+            {
+                NotaMaxDisGr = Convert.ToInt32(cBoxDisGr.Text); NotaMaxImag = Convert.ToInt32(cBoxImag.Text);
+                NotaMaxArNav = Convert.ToInt32(cBoxArNav.Text); NotaMaxOri = Convert.ToInt32(cBoxOri.Text);
+                NotaMaxInfo = Convert.ToInt32(cBoxInfo.Text); NotaMaxIntern = Convert.ToInt32(cBoxIntern.Text);
+                NotaMaxArBusq = Convert.ToInt32(cBoxArBusq.Text); NotaMaxRes = Convert.ToInt32(cBoxRes.Text);
+                NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes;
+                lbCnfNotaMax.Text = NotaMax.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Un valor máximo de una o más características no fue seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
