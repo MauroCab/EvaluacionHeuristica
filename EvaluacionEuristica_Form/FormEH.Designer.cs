@@ -74,6 +74,33 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabConfig = new System.Windows.Forms.TabPage();
+            this.lbCnfNotaMax = new System.Windows.Forms.Label();
+            this.lbCnfNM = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.cBoxImag = new System.Windows.Forms.ComboBox();
+            this.cBoxDisGr = new System.Windows.Forms.ComboBox();
+            this.lbCnfDis = new System.Windows.Forms.Label();
+            this.lbCnfDisGr = new System.Windows.Forms.Label();
+            this.lbCnfIm = new System.Windows.Forms.Label();
+            this.BttSaveConfig = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cBoxArBusq = new System.Windows.Forms.ComboBox();
+            this.cBoxRes = new System.Windows.Forms.ComboBox();
+            this.lbCnfBusq = new System.Windows.Forms.Label();
+            this.lbCnfArBusq = new System.Windows.Forms.Label();
+            this.lbCnfRes = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cBoxInfo = new System.Windows.Forms.ComboBox();
+            this.cBoxIntern = new System.Windows.Forms.ComboBox();
+            this.lbCnfCont = new System.Windows.Forms.Label();
+            this.lbCnfInf = new System.Windows.Forms.Label();
+            this.lbCnfIntern = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.cBoxArNav = new System.Windows.Forms.ComboBox();
+            this.cBoxOri = new System.Windows.Forms.ComboBox();
+            this.lbCnfNav = new System.Windows.Forms.Label();
+            this.lbCnfArNav = new System.Windows.Forms.Label();
+            this.lblCnfOri = new System.Windows.Forms.Label();
             this.tabDisenio = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -114,25 +141,7 @@
             this.cbAreaBusq = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lbCnfBusq = new System.Windows.Forms.Label();
-            this.BttSaveConfig = new System.Windows.Forms.Button();
-            this.lbCnfArBusq = new System.Windows.Forms.Label();
-            this.lbCnfRes = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.lbCnfCont = new System.Windows.Forms.Label();
-            this.lbCnfInf = new System.Windows.Forms.Label();
-            this.lbCnfIntern = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.lbCnfNav = new System.Windows.Forms.Label();
-            this.lbCnfArNav = new System.Windows.Forms.Label();
-            this.lblCnfOri = new System.Windows.Forms.Label();
-            this.lbCnfIm = new System.Windows.Forms.Label();
-            this.lbCnfDisGr = new System.Windows.Forms.Label();
-            this.lbCnfDis = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lbCnfNM = new System.Windows.Forms.Label();
-            this.lbCnfNotaMax = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -142,6 +151,10 @@
             this.tabInicio.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabConfig.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.tabDisenio.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -154,10 +167,6 @@
             this.tabBusqueda.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -177,7 +186,7 @@
             this.panel1.Controls.Add(this.UsabilityLevel);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(733, 474);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 67);
             this.panel1.TabIndex = 1;
@@ -212,7 +221,7 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Location = new System.Drawing.Point(8, 64);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(863, 370);
             this.panel2.TabIndex = 2;
@@ -229,7 +238,7 @@
             this.panel9.Controls.Add(this.label29);
             this.panel9.Controls.Add(this.label30);
             this.panel9.Location = new System.Drawing.Point(-5, 272);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(869, 96);
             this.panel9.TabIndex = 33;
@@ -238,7 +247,7 @@
             // 
             this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox19.Location = new System.Drawing.Point(248, 44);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(4);
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(72, 30);
@@ -261,7 +270,7 @@
             // 
             this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox20.Location = new System.Drawing.Point(420, 44);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(4);
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(72, 30);
@@ -273,7 +282,7 @@
             // 
             this.btnEvaluarBusq.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvaluarBusq.Location = new System.Drawing.Point(717, 28);
-            this.btnEvaluarBusq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEvaluarBusq.Margin = new System.Windows.Forms.Padding(4);
             this.btnEvaluarBusq.Name = "btnEvaluarBusq";
             this.btnEvaluarBusq.Size = new System.Drawing.Size(100, 34);
             this.btnEvaluarBusq.TabIndex = 11;
@@ -285,7 +294,7 @@
             // 
             this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox21.Location = new System.Drawing.Point(556, 44);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox21.Margin = new System.Windows.Forms.Padding(4);
             this.textBox21.Name = "textBox21";
             this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(72, 30);
@@ -339,7 +348,7 @@
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(-5, 181);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(869, 92);
             this.panel6.TabIndex = 32;
@@ -348,7 +357,7 @@
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox7.Location = new System.Drawing.Point(241, 44);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(72, 30);
@@ -371,7 +380,7 @@
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox8.Location = new System.Drawing.Point(417, 44);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(72, 30);
@@ -383,7 +392,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(717, 28);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 34);
             this.button3.TabIndex = 11;
@@ -394,7 +403,7 @@
             // 
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox9.Location = new System.Drawing.Point(588, 44);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(72, 30);
@@ -447,7 +456,7 @@
             this.panel7.Controls.Add(this.label21);
             this.panel7.Controls.Add(this.label22);
             this.panel7.Location = new System.Drawing.Point(-5, 90);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(869, 92);
             this.panel7.TabIndex = 32;
@@ -456,7 +465,7 @@
             // 
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox13.Location = new System.Drawing.Point(279, 44);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(72, 30);
@@ -481,7 +490,7 @@
             // 
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox14.Location = new System.Drawing.Point(451, 44);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(72, 30);
@@ -494,7 +503,7 @@
             // 
             this.btnEvaluarNav.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvaluarNav.Location = new System.Drawing.Point(717, 28);
-            this.btnEvaluarNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEvaluarNav.Margin = new System.Windows.Forms.Padding(4);
             this.btnEvaluarNav.Name = "btnEvaluarNav";
             this.btnEvaluarNav.Size = new System.Drawing.Size(100, 34);
             this.btnEvaluarNav.TabIndex = 11;
@@ -506,7 +515,7 @@
             // 
             this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox15.Location = new System.Drawing.Point(588, 44);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(72, 30);
@@ -572,7 +581,7 @@
             this.tabControl1.Controls.Add(this.tabCont);
             this.tabControl1.Controls.Add(this.tabBusqueda);
             this.tabControl1.Location = new System.Drawing.Point(16, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(905, 601);
@@ -587,9 +596,9 @@
             this.tabInicio.Controls.Add(this.Title);
             this.tabInicio.Controls.Add(this.label1);
             this.tabInicio.Location = new System.Drawing.Point(4, 25);
-            this.tabInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabInicio.Margin = new System.Windows.Forms.Padding(4);
             this.tabInicio.Name = "tabInicio";
-            this.tabInicio.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabInicio.Padding = new System.Windows.Forms.Padding(4);
             this.tabInicio.Size = new System.Drawing.Size(897, 572);
             this.tabInicio.TabIndex = 0;
             this.tabInicio.Text = "Inicio";
@@ -606,7 +615,7 @@
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Location = new System.Drawing.Point(8, 64);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(863, 92);
             this.panel4.TabIndex = 32;
@@ -616,7 +625,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox4.Location = new System.Drawing.Point(253, 44);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(72, 30);
@@ -641,7 +650,7 @@
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox5.Location = new System.Drawing.Point(417, 44);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(72, 30);
@@ -653,7 +662,7 @@
             // 
             this.btnEvaluarDiseño.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvaluarDiseño.Location = new System.Drawing.Point(717, 28);
-            this.btnEvaluarDiseño.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEvaluarDiseño.Margin = new System.Windows.Forms.Padding(4);
             this.btnEvaluarDiseño.Name = "btnEvaluarDiseño";
             this.btnEvaluarDiseño.Size = new System.Drawing.Size(100, 34);
             this.btnEvaluarDiseño.TabIndex = 11;
@@ -665,7 +674,7 @@
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox6.Location = new System.Drawing.Point(560, 44);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(72, 30);
@@ -709,6 +718,7 @@
             // tabConfig
             // 
             this.tabConfig.BackColor = System.Drawing.SystemColors.Control;
+            this.tabConfig.Controls.Add(this.textBox18);
             this.tabConfig.Controls.Add(this.lbCnfNotaMax);
             this.tabConfig.Controls.Add(this.lbCnfNM);
             this.tabConfig.Controls.Add(this.panel3);
@@ -717,12 +727,386 @@
             this.tabConfig.Controls.Add(this.panel8);
             this.tabConfig.Controls.Add(this.panel10);
             this.tabConfig.Location = new System.Drawing.Point(4, 25);
-            this.tabConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabConfig.Margin = new System.Windows.Forms.Padding(4);
             this.tabConfig.Name = "tabConfig";
-            this.tabConfig.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabConfig.Padding = new System.Windows.Forms.Padding(4);
             this.tabConfig.Size = new System.Drawing.Size(897, 572);
             this.tabConfig.TabIndex = 1;
             this.tabConfig.Text = "Config";
+            // 
+            // lbCnfNotaMax
+            // 
+            this.lbCnfNotaMax.AutoSize = true;
+            this.lbCnfNotaMax.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfNotaMax.Location = new System.Drawing.Point(226, 494);
+            this.lbCnfNotaMax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfNotaMax.Name = "lbCnfNotaMax";
+            this.lbCnfNotaMax.Size = new System.Drawing.Size(29, 37);
+            this.lbCnfNotaMax.TabIndex = 38;
+            this.lbCnfNotaMax.Text = "-";
+            // 
+            // lbCnfNM
+            // 
+            this.lbCnfNM.AutoSize = true;
+            this.lbCnfNM.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfNM.Location = new System.Drawing.Point(23, 494);
+            this.lbCnfNM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfNM.Name = "lbCnfNM";
+            this.lbCnfNM.Size = new System.Drawing.Size(195, 37);
+            this.lbCnfNM.TabIndex = 25;
+            this.lbCnfNM.Text = "Nota Máxima:";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.cBoxImag);
+            this.panel3.Controls.Add(this.cBoxDisGr);
+            this.panel3.Controls.Add(this.lbCnfDis);
+            this.panel3.Controls.Add(this.lbCnfDisGr);
+            this.panel3.Controls.Add(this.lbCnfIm);
+            this.panel3.Location = new System.Drawing.Point(10, 90);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(869, 92);
+            this.panel3.TabIndex = 34;
+            // 
+            // cBoxImag
+            // 
+            this.cBoxImag.FormattingEnabled = true;
+            this.cBoxImag.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxImag.Location = new System.Drawing.Point(779, 38);
+            this.cBoxImag.Name = "cBoxImag";
+            this.cBoxImag.Size = new System.Drawing.Size(56, 24);
+            this.cBoxImag.TabIndex = 26;
+            // 
+            // cBoxDisGr
+            // 
+            this.cBoxDisGr.FormattingEnabled = true;
+            this.cBoxDisGr.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxDisGr.Location = new System.Drawing.Point(427, 38);
+            this.cBoxDisGr.Name = "cBoxDisGr";
+            this.cBoxDisGr.Size = new System.Drawing.Size(56, 24);
+            this.cBoxDisGr.TabIndex = 25;
+            // 
+            // lbCnfDis
+            // 
+            this.lbCnfDis.AutoSize = true;
+            this.lbCnfDis.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfDis.Location = new System.Drawing.Point(27, 25);
+            this.lbCnfDis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfDis.Name = "lbCnfDis";
+            this.lbCnfDis.Size = new System.Drawing.Size(104, 37);
+            this.lbCnfDis.TabIndex = 4;
+            this.lbCnfDis.Text = "Diseño";
+            // 
+            // lbCnfDisGr
+            // 
+            this.lbCnfDisGr.AutoSize = true;
+            this.lbCnfDisGr.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfDisGr.Location = new System.Drawing.Point(202, 34);
+            this.lbCnfDisGr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfDisGr.Name = "lbCnfDisGr";
+            this.lbCnfDisGr.Size = new System.Drawing.Size(153, 28);
+            this.lbCnfDisGr.TabIndex = 23;
+            this.lbCnfDisGr.Text = "Diseño Gráfico";
+            // 
+            // lbCnfIm
+            // 
+            this.lbCnfIm.AutoSize = true;
+            this.lbCnfIm.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfIm.Location = new System.Drawing.Point(555, 38);
+            this.lbCnfIm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfIm.Name = "lbCnfIm";
+            this.lbCnfIm.Size = new System.Drawing.Size(103, 28);
+            this.lbCnfIm.TabIndex = 24;
+            this.lbCnfIm.Text = "Imágenes";
+            // 
+            // BttSaveConfig
+            // 
+            this.BttSaveConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttSaveConfig.Location = new System.Drawing.Point(779, 502);
+            this.BttSaveConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.BttSaveConfig.Name = "BttSaveConfig";
+            this.BttSaveConfig.Size = new System.Drawing.Size(100, 34);
+            this.BttSaveConfig.TabIndex = 11;
+            this.BttSaveConfig.Text = "Guardar";
+            this.BttSaveConfig.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.cBoxArBusq);
+            this.panel5.Controls.Add(this.cBoxRes);
+            this.panel5.Controls.Add(this.lbCnfBusq);
+            this.panel5.Controls.Add(this.lbCnfArBusq);
+            this.panel5.Controls.Add(this.lbCnfRes);
+            this.panel5.Location = new System.Drawing.Point(10, 390);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(869, 96);
+            this.panel5.TabIndex = 37;
+            // 
+            // cBoxArBusq
+            // 
+            this.cBoxArBusq.FormattingEnabled = true;
+            this.cBoxArBusq.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxArBusq.Location = new System.Drawing.Point(427, 40);
+            this.cBoxArBusq.Name = "cBoxArBusq";
+            this.cBoxArBusq.Size = new System.Drawing.Size(56, 24);
+            this.cBoxArBusq.TabIndex = 31;
+            // 
+            // cBoxRes
+            // 
+            this.cBoxRes.FormattingEnabled = true;
+            this.cBoxRes.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxRes.Location = new System.Drawing.Point(779, 40);
+            this.cBoxRes.Name = "cBoxRes";
+            this.cBoxRes.Size = new System.Drawing.Size(56, 24);
+            this.cBoxRes.TabIndex = 29;
+            // 
+            // lbCnfBusq
+            // 
+            this.lbCnfBusq.AutoSize = true;
+            this.lbCnfBusq.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfBusq.Location = new System.Drawing.Point(27, 25);
+            this.lbCnfBusq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfBusq.Name = "lbCnfBusq";
+            this.lbCnfBusq.Size = new System.Drawing.Size(141, 37);
+            this.lbCnfBusq.TabIndex = 4;
+            this.lbCnfBusq.Text = "Búsqueda";
+            // 
+            // lbCnfArBusq
+            // 
+            this.lbCnfArBusq.AutoSize = true;
+            this.lbCnfArBusq.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfArBusq.Location = new System.Drawing.Point(202, 33);
+            this.lbCnfArBusq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfArBusq.Name = "lbCnfArBusq";
+            this.lbCnfArBusq.Size = new System.Drawing.Size(187, 28);
+            this.lbCnfArBusq.TabIndex = 23;
+            this.lbCnfArBusq.Text = "Área de Búsqueda";
+            // 
+            // lbCnfRes
+            // 
+            this.lbCnfRes.AutoSize = true;
+            this.lbCnfRes.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfRes.Location = new System.Drawing.Point(555, 33);
+            this.lbCnfRes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfRes.Name = "lbCnfRes";
+            this.lbCnfRes.Size = new System.Drawing.Size(115, 28);
+            this.lbCnfRes.TabIndex = 24;
+            this.lbCnfRes.Text = "Resultados";
+            this.lbCnfRes.UseWaitCursor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.cBoxInfo);
+            this.panel8.Controls.Add(this.cBoxIntern);
+            this.panel8.Controls.Add(this.lbCnfCont);
+            this.panel8.Controls.Add(this.lbCnfInf);
+            this.panel8.Controls.Add(this.lbCnfIntern);
+            this.panel8.Location = new System.Drawing.Point(10, 290);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(869, 92);
+            this.panel8.TabIndex = 35;
+            // 
+            // cBoxInfo
+            // 
+            this.cBoxInfo.FormattingEnabled = true;
+            this.cBoxInfo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxInfo.Location = new System.Drawing.Point(427, 40);
+            this.cBoxInfo.Name = "cBoxInfo";
+            this.cBoxInfo.Size = new System.Drawing.Size(56, 24);
+            this.cBoxInfo.TabIndex = 27;
+            // 
+            // cBoxIntern
+            // 
+            this.cBoxIntern.FormattingEnabled = true;
+            this.cBoxIntern.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxIntern.Location = new System.Drawing.Point(779, 40);
+            this.cBoxIntern.Name = "cBoxIntern";
+            this.cBoxIntern.Size = new System.Drawing.Size(56, 24);
+            this.cBoxIntern.TabIndex = 28;
+            // 
+            // lbCnfCont
+            // 
+            this.lbCnfCont.AutoSize = true;
+            this.lbCnfCont.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfCont.Location = new System.Drawing.Point(27, 25);
+            this.lbCnfCont.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfCont.Name = "lbCnfCont";
+            this.lbCnfCont.Size = new System.Drawing.Size(150, 37);
+            this.lbCnfCont.TabIndex = 4;
+            this.lbCnfCont.Text = "Contenido";
+            // 
+            // lbCnfInf
+            // 
+            this.lbCnfInf.AutoSize = true;
+            this.lbCnfInf.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfInf.Location = new System.Drawing.Point(202, 33);
+            this.lbCnfInf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfInf.Name = "lbCnfInf";
+            this.lbCnfInf.Size = new System.Drawing.Size(127, 28);
+            this.lbCnfInf.TabIndex = 23;
+            this.lbCnfInf.Text = "Información";
+            // 
+            // lbCnfIntern
+            // 
+            this.lbCnfIntern.AutoSize = true;
+            this.lbCnfIntern.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfIntern.Location = new System.Drawing.Point(555, 33);
+            this.lbCnfIntern.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfIntern.Name = "lbCnfIntern";
+            this.lbCnfIntern.Size = new System.Drawing.Size(201, 28);
+            this.lbCnfIntern.TabIndex = 24;
+            this.lbCnfIntern.Text = "Internacionalización";
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.cBoxArNav);
+            this.panel10.Controls.Add(this.cBoxOri);
+            this.panel10.Controls.Add(this.lbCnfNav);
+            this.panel10.Controls.Add(this.lbCnfArNav);
+            this.panel10.Controls.Add(this.lblCnfOri);
+            this.panel10.Location = new System.Drawing.Point(10, 190);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(869, 92);
+            this.panel10.TabIndex = 36;
+            // 
+            // cBoxArNav
+            // 
+            this.cBoxArNav.FormattingEnabled = true;
+            this.cBoxArNav.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxArNav.Location = new System.Drawing.Point(427, 41);
+            this.cBoxArNav.Name = "cBoxArNav";
+            this.cBoxArNav.Size = new System.Drawing.Size(56, 24);
+            this.cBoxArNav.TabIndex = 30;
+            // 
+            // cBoxOri
+            // 
+            this.cBoxOri.FormattingEnabled = true;
+            this.cBoxOri.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cBoxOri.Location = new System.Drawing.Point(779, 41);
+            this.cBoxOri.Name = "cBoxOri";
+            this.cBoxOri.Size = new System.Drawing.Size(56, 24);
+            this.cBoxOri.TabIndex = 27;
+            // 
+            // lbCnfNav
+            // 
+            this.lbCnfNav.AutoSize = true;
+            this.lbCnfNav.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
+            this.lbCnfNav.Location = new System.Drawing.Point(27, 25);
+            this.lbCnfNav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfNav.Name = "lbCnfNav";
+            this.lbCnfNav.Size = new System.Drawing.Size(167, 37);
+            this.lbCnfNav.TabIndex = 4;
+            this.lbCnfNav.Text = "Navegación";
+            // 
+            // lbCnfArNav
+            // 
+            this.lbCnfArNav.AutoSize = true;
+            this.lbCnfArNav.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCnfArNav.Location = new System.Drawing.Point(202, 34);
+            this.lbCnfArNav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCnfArNav.Name = "lbCnfArNav";
+            this.lbCnfArNav.Size = new System.Drawing.Size(202, 28);
+            this.lbCnfArNav.TabIndex = 23;
+            this.lbCnfArNav.Text = "Área de navegación";
+            // 
+            // lblCnfOri
+            // 
+            this.lblCnfOri.AutoSize = true;
+            this.lblCnfOri.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCnfOri.Location = new System.Drawing.Point(555, 33);
+            this.lblCnfOri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCnfOri.Name = "lblCnfOri";
+            this.lblCnfOri.Size = new System.Drawing.Size(123, 28);
+            this.lblCnfOri.TabIndex = 24;
+            this.lblCnfOri.Text = "Orientación";
             // 
             // tabDisenio
             // 
@@ -731,7 +1115,7 @@
             this.tabDisenio.Controls.Add(this.groupBox1);
             this.tabDisenio.Controls.Add(this.label3);
             this.tabDisenio.Location = new System.Drawing.Point(4, 25);
-            this.tabDisenio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabDisenio.Margin = new System.Windows.Forms.Padding(4);
             this.tabDisenio.Name = "tabDisenio";
             this.tabDisenio.Size = new System.Drawing.Size(897, 572);
             this.tabDisenio.TabIndex = 2;
@@ -743,9 +1127,9 @@
             this.groupBox2.Controls.Add(this.cbImagenes);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Location = new System.Drawing.Point(471, 66);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(420, 485);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -776,7 +1160,7 @@
             "9",
             "10"});
             this.cbImagenes.Location = new System.Drawing.Point(136, 390);
-            this.cbImagenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbImagenes.Margin = new System.Windows.Forms.Padding(4);
             this.cbImagenes.Name = "cbImagenes";
             this.cbImagenes.Size = new System.Drawing.Size(160, 24);
             this.cbImagenes.TabIndex = 6;
@@ -785,7 +1169,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(20, 23);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -799,9 +1183,9 @@
             this.groupBox1.Controls.Add(this.cbDisGrafico);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(23, 66);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(420, 485);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -833,7 +1217,7 @@
             "9",
             "10"});
             this.cbDisGrafico.Location = new System.Drawing.Point(120, 391);
-            this.cbDisGrafico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDisGrafico.Margin = new System.Windows.Forms.Padding(4);
             this.cbDisGrafico.Name = "cbDisGrafico";
             this.cbDisGrafico.Size = new System.Drawing.Size(160, 24);
             this.cbDisGrafico.TabIndex = 1;
@@ -842,7 +1226,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(17, 23);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -868,7 +1252,7 @@
             this.tabNavegacion.Controls.Add(this.groupBox4);
             this.tabNavegacion.Controls.Add(this.label16);
             this.tabNavegacion.Location = new System.Drawing.Point(4, 25);
-            this.tabNavegacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNavegacion.Margin = new System.Windows.Forms.Padding(4);
             this.tabNavegacion.Name = "tabNavegacion";
             this.tabNavegacion.Size = new System.Drawing.Size(897, 572);
             this.tabNavegacion.TabIndex = 3;
@@ -880,9 +1264,9 @@
             this.groupBox3.Controls.Add(this.cbOrientacion);
             this.groupBox3.Controls.Add(this.textBox3);
             this.groupBox3.Location = new System.Drawing.Point(461, 66);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(420, 485);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
@@ -913,7 +1297,7 @@
             "9",
             "10"});
             this.cbOrientacion.Location = new System.Drawing.Point(136, 390);
-            this.cbOrientacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbOrientacion.Margin = new System.Windows.Forms.Padding(4);
             this.cbOrientacion.Name = "cbOrientacion";
             this.cbOrientacion.Size = new System.Drawing.Size(160, 24);
             this.cbOrientacion.TabIndex = 6;
@@ -922,7 +1306,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(20, 23);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -936,9 +1320,9 @@
             this.groupBox4.Controls.Add(this.cbAreaNav);
             this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Location = new System.Drawing.Point(13, 66);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(420, 485);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
@@ -969,7 +1353,7 @@
             "9",
             "10"});
             this.cbAreaNav.Location = new System.Drawing.Point(133, 390);
-            this.cbAreaNav.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAreaNav.Margin = new System.Windows.Forms.Padding(4);
             this.cbAreaNav.Name = "cbAreaNav";
             this.cbAreaNav.Size = new System.Drawing.Size(160, 24);
             this.cbAreaNav.TabIndex = 1;
@@ -978,7 +1362,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(17, 23);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
@@ -1004,7 +1388,7 @@
             this.tabCont.Controls.Add(this.groupBox6);
             this.tabCont.Controls.Add(this.label23);
             this.tabCont.Location = new System.Drawing.Point(4, 25);
-            this.tabCont.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabCont.Margin = new System.Windows.Forms.Padding(4);
             this.tabCont.Name = "tabCont";
             this.tabCont.Size = new System.Drawing.Size(897, 572);
             this.tabCont.TabIndex = 4;
@@ -1016,9 +1400,9 @@
             this.groupBox5.Controls.Add(this.cbInter);
             this.groupBox5.Controls.Add(this.textBox11);
             this.groupBox5.Location = new System.Drawing.Point(461, 66);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(420, 485);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
@@ -1049,7 +1433,7 @@
             "9",
             "10"});
             this.cbInter.Location = new System.Drawing.Point(136, 390);
-            this.cbInter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbInter.Margin = new System.Windows.Forms.Padding(4);
             this.cbInter.Name = "cbInter";
             this.cbInter.Size = new System.Drawing.Size(160, 24);
             this.cbInter.TabIndex = 6;
@@ -1058,7 +1442,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(20, 23);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
@@ -1072,9 +1456,9 @@
             this.groupBox6.Controls.Add(this.cbInformacion);
             this.groupBox6.Controls.Add(this.textBox12);
             this.groupBox6.Location = new System.Drawing.Point(13, 66);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(420, 485);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
@@ -1105,7 +1489,7 @@
             "9",
             "10"});
             this.cbInformacion.Location = new System.Drawing.Point(133, 390);
-            this.cbInformacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbInformacion.Margin = new System.Windows.Forms.Padding(4);
             this.cbInformacion.Name = "cbInformacion";
             this.cbInformacion.Size = new System.Drawing.Size(160, 24);
             this.cbInformacion.TabIndex = 1;
@@ -1114,7 +1498,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(17, 23);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
@@ -1140,7 +1524,7 @@
             this.tabBusqueda.Controls.Add(this.groupBox8);
             this.tabBusqueda.Controls.Add(this.label26);
             this.tabBusqueda.Location = new System.Drawing.Point(4, 25);
-            this.tabBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.tabBusqueda.Name = "tabBusqueda";
             this.tabBusqueda.Size = new System.Drawing.Size(897, 572);
             this.tabBusqueda.TabIndex = 5;
@@ -1152,9 +1536,9 @@
             this.groupBox7.Controls.Add(this.cbResultadosBusq);
             this.groupBox7.Controls.Add(this.textBox16);
             this.groupBox7.Location = new System.Drawing.Point(461, 66);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox7.Size = new System.Drawing.Size(420, 485);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
@@ -1185,7 +1569,7 @@
             "9",
             "10"});
             this.cbResultadosBusq.Location = new System.Drawing.Point(136, 390);
-            this.cbResultadosBusq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbResultadosBusq.Margin = new System.Windows.Forms.Padding(4);
             this.cbResultadosBusq.Name = "cbResultadosBusq";
             this.cbResultadosBusq.Size = new System.Drawing.Size(160, 24);
             this.cbResultadosBusq.TabIndex = 6;
@@ -1194,7 +1578,7 @@
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(20, 23);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(4);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
@@ -1208,9 +1592,9 @@
             this.groupBox8.Controls.Add(this.cbAreaBusq);
             this.groupBox8.Controls.Add(this.textBox17);
             this.groupBox8.Location = new System.Drawing.Point(13, 66);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox8.Size = new System.Drawing.Size(420, 485);
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
@@ -1241,7 +1625,7 @@
             "9",
             "10"});
             this.cbAreaBusq.Location = new System.Drawing.Point(133, 390);
-            this.cbAreaBusq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAreaBusq.Margin = new System.Windows.Forms.Padding(4);
             this.cbAreaBusq.Name = "cbAreaBusq";
             this.cbAreaBusq.Size = new System.Drawing.Size(160, 24);
             this.cbAreaBusq.TabIndex = 1;
@@ -1250,7 +1634,7 @@
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(17, 23);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(4);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
@@ -1269,219 +1653,16 @@
             this.label26.TabIndex = 4;
             this.label26.Text = "Búsqueda";
             // 
-            // panel5
+            // textBox18
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.lbCnfBusq);
-            this.panel5.Controls.Add(this.lbCnfArBusq);
-            this.panel5.Controls.Add(this.lbCnfRes);
-            this.panel5.Location = new System.Drawing.Point(10, 390);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(869, 96);
-            this.panel5.TabIndex = 37;
-            // 
-            // lbCnfBusq
-            // 
-            this.lbCnfBusq.AutoSize = true;
-            this.lbCnfBusq.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfBusq.Location = new System.Drawing.Point(27, 25);
-            this.lbCnfBusq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfBusq.Name = "lbCnfBusq";
-            this.lbCnfBusq.Size = new System.Drawing.Size(141, 37);
-            this.lbCnfBusq.TabIndex = 4;
-            this.lbCnfBusq.Text = "Búsqueda";
-            // 
-            // BttSaveConfig
-            // 
-            this.BttSaveConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttSaveConfig.Location = new System.Drawing.Point(779, 502);
-            this.BttSaveConfig.Margin = new System.Windows.Forms.Padding(4);
-            this.BttSaveConfig.Name = "BttSaveConfig";
-            this.BttSaveConfig.Size = new System.Drawing.Size(100, 34);
-            this.BttSaveConfig.TabIndex = 11;
-            this.BttSaveConfig.Text = "Guardar";
-            this.BttSaveConfig.UseVisualStyleBackColor = true;
-            // 
-            // lbCnfArBusq
-            // 
-            this.lbCnfArBusq.AutoSize = true;
-            this.lbCnfArBusq.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfArBusq.Location = new System.Drawing.Point(202, 33);
-            this.lbCnfArBusq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfArBusq.Name = "lbCnfArBusq";
-            this.lbCnfArBusq.Size = new System.Drawing.Size(187, 28);
-            this.lbCnfArBusq.TabIndex = 23;
-            this.lbCnfArBusq.Text = "Área de Búsqueda";
-            // 
-            // lbCnfRes
-            // 
-            this.lbCnfRes.AutoSize = true;
-            this.lbCnfRes.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfRes.Location = new System.Drawing.Point(520, 33);
-            this.lbCnfRes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfRes.Name = "lbCnfRes";
-            this.lbCnfRes.Size = new System.Drawing.Size(115, 28);
-            this.lbCnfRes.TabIndex = 24;
-            this.lbCnfRes.Text = "Resultados";
-            this.lbCnfRes.UseWaitCursor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.lbCnfCont);
-            this.panel8.Controls.Add(this.lbCnfInf);
-            this.panel8.Controls.Add(this.lbCnfIntern);
-            this.panel8.Location = new System.Drawing.Point(10, 290);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(869, 92);
-            this.panel8.TabIndex = 35;
-            // 
-            // lbCnfCont
-            // 
-            this.lbCnfCont.AutoSize = true;
-            this.lbCnfCont.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfCont.Location = new System.Drawing.Point(27, 25);
-            this.lbCnfCont.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfCont.Name = "lbCnfCont";
-            this.lbCnfCont.Size = new System.Drawing.Size(150, 37);
-            this.lbCnfCont.TabIndex = 4;
-            this.lbCnfCont.Text = "Contenido";
-            // 
-            // lbCnfInf
-            // 
-            this.lbCnfInf.AutoSize = true;
-            this.lbCnfInf.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfInf.Location = new System.Drawing.Point(202, 33);
-            this.lbCnfInf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfInf.Name = "lbCnfInf";
-            this.lbCnfInf.Size = new System.Drawing.Size(127, 28);
-            this.lbCnfInf.TabIndex = 23;
-            this.lbCnfInf.Text = "Información";
-            // 
-            // lbCnfIntern
-            // 
-            this.lbCnfIntern.AutoSize = true;
-            this.lbCnfIntern.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfIntern.Location = new System.Drawing.Point(512, 33);
-            this.lbCnfIntern.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfIntern.Name = "lbCnfIntern";
-            this.lbCnfIntern.Size = new System.Drawing.Size(201, 28);
-            this.lbCnfIntern.TabIndex = 24;
-            this.lbCnfIntern.Text = "Internacionalización";
-            // 
-            // panel10
-            // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.lbCnfNav);
-            this.panel10.Controls.Add(this.lbCnfArNav);
-            this.panel10.Controls.Add(this.lblCnfOri);
-            this.panel10.Location = new System.Drawing.Point(10, 190);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(869, 92);
-            this.panel10.TabIndex = 36;
-            // 
-            // lbCnfNav
-            // 
-            this.lbCnfNav.AutoSize = true;
-            this.lbCnfNav.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfNav.Location = new System.Drawing.Point(27, 25);
-            this.lbCnfNav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfNav.Name = "lbCnfNav";
-            this.lbCnfNav.Size = new System.Drawing.Size(167, 37);
-            this.lbCnfNav.TabIndex = 4;
-            this.lbCnfNav.Text = "Navegación";
-            // 
-            // lbCnfArNav
-            // 
-            this.lbCnfArNav.AutoSize = true;
-            this.lbCnfArNav.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfArNav.Location = new System.Drawing.Point(202, 34);
-            this.lbCnfArNav.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfArNav.Name = "lbCnfArNav";
-            this.lbCnfArNav.Size = new System.Drawing.Size(202, 28);
-            this.lbCnfArNav.TabIndex = 23;
-            this.lbCnfArNav.Text = "Área de navegación";
-            // 
-            // lblCnfOri
-            // 
-            this.lblCnfOri.AutoSize = true;
-            this.lblCnfOri.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCnfOri.Location = new System.Drawing.Point(512, 34);
-            this.lblCnfOri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCnfOri.Name = "lblCnfOri";
-            this.lblCnfOri.Size = new System.Drawing.Size(123, 28);
-            this.lblCnfOri.TabIndex = 24;
-            this.lblCnfOri.Text = "Orientación";
-            // 
-            // lbCnfIm
-            // 
-            this.lbCnfIm.AutoSize = true;
-            this.lbCnfIm.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfIm.Location = new System.Drawing.Point(512, 33);
-            this.lbCnfIm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfIm.Name = "lbCnfIm";
-            this.lbCnfIm.Size = new System.Drawing.Size(103, 28);
-            this.lbCnfIm.TabIndex = 24;
-            this.lbCnfIm.Text = "Imágenes";
-            // 
-            // lbCnfDisGr
-            // 
-            this.lbCnfDisGr.AutoSize = true;
-            this.lbCnfDisGr.Font = new System.Drawing.Font("Malgun Gothic Semilight", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCnfDisGr.Location = new System.Drawing.Point(202, 34);
-            this.lbCnfDisGr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfDisGr.Name = "lbCnfDisGr";
-            this.lbCnfDisGr.Size = new System.Drawing.Size(153, 28);
-            this.lbCnfDisGr.TabIndex = 23;
-            this.lbCnfDisGr.Text = "Diseño Gráfico";
-            // 
-            // lbCnfDis
-            // 
-            this.lbCnfDis.AutoSize = true;
-            this.lbCnfDis.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfDis.Location = new System.Drawing.Point(27, 25);
-            this.lbCnfDis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfDis.Name = "lbCnfDis";
-            this.lbCnfDis.Size = new System.Drawing.Size(104, 37);
-            this.lbCnfDis.TabIndex = 4;
-            this.lbCnfDis.Text = "Diseño";
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.lbCnfDis);
-            this.panel3.Controls.Add(this.lbCnfDisGr);
-            this.panel3.Controls.Add(this.lbCnfIm);
-            this.panel3.Location = new System.Drawing.Point(10, 90);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(869, 92);
-            this.panel3.TabIndex = 34;
-            // 
-            // lbCnfNM
-            // 
-            this.lbCnfNM.AutoSize = true;
-            this.lbCnfNM.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfNM.Location = new System.Drawing.Point(23, 494);
-            this.lbCnfNM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfNM.Name = "lbCnfNM";
-            this.lbCnfNM.Size = new System.Drawing.Size(195, 37);
-            this.lbCnfNM.TabIndex = 25;
-            this.lbCnfNM.Text = "Nota Máxima:";
-            // 
-            // lbCnfNotaMax
-            // 
-            this.lbCnfNotaMax.AutoSize = true;
-            this.lbCnfNotaMax.Font = new System.Drawing.Font("Malgun Gothic Semilight", 16F, System.Drawing.FontStyle.Bold);
-            this.lbCnfNotaMax.Location = new System.Drawing.Point(226, 494);
-            this.lbCnfNotaMax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCnfNotaMax.Name = "lbCnfNotaMax";
-            this.lbCnfNotaMax.Size = new System.Drawing.Size(29, 37);
-            this.lbCnfNotaMax.TabIndex = 38;
-            this.lbCnfNotaMax.Text = "-";
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(13, 10);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(866, 73);
+            this.textBox18.TabIndex = 39;
+            this.textBox18.Text = "Coloque una nota máxima del 1 al 10 según la importancia de cada característica q" +
+    "ue considera usted debe cumplirse en la página, según la función de esa página.";
             // 
             // FormEH
             // 
@@ -1489,7 +1670,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 606);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEH";
             this.Text = "Evaluación Heurística";
             this.panel1.ResumeLayout(false);
@@ -1508,6 +1689,14 @@
             this.panel4.PerformLayout();
             this.tabConfig.ResumeLayout(false);
             this.tabConfig.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.tabDisenio.ResumeLayout(false);
             this.tabDisenio.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1532,14 +1721,6 @@
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1650,6 +1831,15 @@
         private System.Windows.Forms.Label lblCnfOri;
         private System.Windows.Forms.Label lbCnfNotaMax;
         private System.Windows.Forms.Label lbCnfNM;
+        private System.Windows.Forms.ComboBox cBoxDisGr;
+        private System.Windows.Forms.ComboBox cBoxImag;
+        private System.Windows.Forms.ComboBox cBoxArBusq;
+        private System.Windows.Forms.ComboBox cBoxRes;
+        private System.Windows.Forms.ComboBox cBoxInfo;
+        private System.Windows.Forms.ComboBox cBoxIntern;
+        private System.Windows.Forms.ComboBox cBoxArNav;
+        private System.Windows.Forms.ComboBox cBoxOri;
+        private System.Windows.Forms.TextBox textBox18;
     }
 }
 
