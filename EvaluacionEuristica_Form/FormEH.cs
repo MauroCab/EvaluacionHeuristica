@@ -60,27 +60,27 @@ namespace EvaluacionEuristica_Form
 
         public void MensajeResultado(float Num)
         {
-            if (Num <= 39.9)
+            if (Num <= 39.99f)
             {
                 MessageBox.Show("La página tiene una usabilidad penosa.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 54.9)
+            else if (Num <= 54.99f)
             {
                 MessageBox.Show("La página tiene una usabilidad mediocre.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 69.9)
+            else if (Num <= 69.99f)
             {
                 MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero no podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 79.9)
+            else if (Num <= 79.99f)
             {
                 MessageBox.Show("La página goza de un buen nivel de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 94.9)
+            else if (Num <= 94.99f)
             {
                 MessageBox.Show("La página está diseñada de una manera muy profesional, aportando un nivel sustancial de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 100.0)
+            else if (Num <= 100.0f)
             {
                 MessageBox.Show("La página es una oda a las heurísticas de Nielsen, cuenta con todo lo que tiene que tener y es prácticamente perfecta en cuestiones de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -204,7 +204,20 @@ namespace EvaluacionEuristica_Form
 
         private void btInicio_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            DialogResult resultado = MessageBox.Show("¿Seguro que querés volver a inicio? Los cambios que no hayas guardado se perderán.", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                tabsInterfaz.SelectedIndex = 0;
+                cBoxDisGr.SelectedItem = NotaMaxDisGr.ToString();
+                cBoxImag.SelectedItem = NotaMaxImag.ToString();
+                cBoxArNav.SelectedItem = NotaMaxArNav.ToString();
+                cBoxOri.SelectedItem = NotaMaxOri.ToString();
+                cBoxInfo.SelectedItem = NotaMaxInfo.ToString();
+                cBoxIntern.SelectedItem = NotaMaxIntern.ToString();
+                cBoxArBusq.SelectedItem = NotaMaxArBusq.ToString();
+                cBoxRes.SelectedItem = NotaMaxRes.ToString();
+            }
         }
 
         private void btInicio2_Click(object sender, EventArgs e)
