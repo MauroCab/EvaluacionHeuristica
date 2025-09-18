@@ -91,5 +91,10 @@ namespace EvaluacionEuristica_Form
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

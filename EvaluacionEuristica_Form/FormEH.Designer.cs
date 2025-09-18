@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEH));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.UsabilityLevel = new System.Windows.Forms.Label();
@@ -77,6 +78,42 @@
             this.tabNavegacion = new System.Windows.Forms.TabPage();
             this.tabCont = new System.Windows.Forms.TabPage();
             this.tabBusqueda = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbDisGrafico = new System.Windows.Forms.ComboBox();
+            this.cbImagenes = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbOrientacion = new System.Windows.Forms.ComboBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cbAreaNav = new System.Windows.Forms.ComboBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbInter = new System.Windows.Forms.ComboBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.cbInformacion = new System.Windows.Forms.ComboBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbResultadosBusq = new System.Windows.Forms.ComboBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.cbAreaBusq = new System.Windows.Forms.ComboBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -85,6 +122,18 @@
             this.tabControl1.SuspendLayout();
             this.tabInicio.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.tabDisenio.SuspendLayout();
+            this.tabNavegacion.SuspendLayout();
+            this.tabCont.SuspendLayout();
+            this.tabBusqueda.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -492,7 +541,7 @@
             this.tabConfig.Location = new System.Drawing.Point(4, 22);
             this.tabConfig.Name = "tabConfig";
             this.tabConfig.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConfig.Size = new System.Drawing.Size(695, 462);
+            this.tabConfig.Size = new System.Drawing.Size(671, 462);
             this.tabConfig.TabIndex = 1;
             this.tabConfig.Text = "Config";
             // 
@@ -602,44 +651,505 @@
             // tabDisenio
             // 
             this.tabDisenio.BackColor = System.Drawing.SystemColors.Control;
+            this.tabDisenio.Controls.Add(this.groupBox2);
+            this.tabDisenio.Controls.Add(this.groupBox1);
+            this.tabDisenio.Controls.Add(this.label3);
             this.tabDisenio.Location = new System.Drawing.Point(4, 22);
             this.tabDisenio.Name = "tabDisenio";
-            this.tabDisenio.Size = new System.Drawing.Size(695, 462);
+            this.tabDisenio.Size = new System.Drawing.Size(671, 462);
             this.tabDisenio.TabIndex = 2;
             this.tabDisenio.Text = "Diseño";
             // 
             // tabNavegacion
             // 
             this.tabNavegacion.BackColor = System.Drawing.SystemColors.Control;
+            this.tabNavegacion.Controls.Add(this.groupBox3);
+            this.tabNavegacion.Controls.Add(this.groupBox4);
+            this.tabNavegacion.Controls.Add(this.label16);
             this.tabNavegacion.Location = new System.Drawing.Point(4, 22);
             this.tabNavegacion.Name = "tabNavegacion";
-            this.tabNavegacion.Size = new System.Drawing.Size(695, 462);
+            this.tabNavegacion.Size = new System.Drawing.Size(671, 462);
             this.tabNavegacion.TabIndex = 3;
             this.tabNavegacion.Text = "Navegacion";
             // 
             // tabCont
             // 
             this.tabCont.BackColor = System.Drawing.SystemColors.Control;
+            this.tabCont.Controls.Add(this.groupBox5);
+            this.tabCont.Controls.Add(this.groupBox6);
+            this.tabCont.Controls.Add(this.label23);
             this.tabCont.Location = new System.Drawing.Point(4, 22);
             this.tabCont.Name = "tabCont";
-            this.tabCont.Size = new System.Drawing.Size(695, 462);
+            this.tabCont.Size = new System.Drawing.Size(671, 462);
             this.tabCont.TabIndex = 4;
             this.tabCont.Text = "Contenido";
             // 
             // tabBusqueda
             // 
             this.tabBusqueda.BackColor = System.Drawing.SystemColors.Control;
+            this.tabBusqueda.Controls.Add(this.groupBox7);
+            this.tabBusqueda.Controls.Add(this.groupBox8);
+            this.tabBusqueda.Controls.Add(this.label26);
             this.tabBusqueda.Location = new System.Drawing.Point(4, 22);
             this.tabBusqueda.Name = "tabBusqueda";
-            this.tabBusqueda.Size = new System.Drawing.Size(695, 462);
+            this.tabBusqueda.Size = new System.Drawing.Size(671, 462);
             this.tabBusqueda.TabIndex = 5;
             this.tabBusqueda.Text = "Busqueda";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(286, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 29);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Diseño";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.cbDisGrafico);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(17, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(315, 394);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Diseño Gráfico";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.cbImagenes);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Location = new System.Drawing.Point(353, 54);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(315, 394);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Imágenes";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(292, 234);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // cbDisGrafico
+            // 
+            this.cbDisGrafico.FormattingEnabled = true;
+            this.cbDisGrafico.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbDisGrafico.Location = new System.Drawing.Point(90, 318);
+            this.cbDisGrafico.Name = "cbDisGrafico";
+            this.cbDisGrafico.Size = new System.Drawing.Size(121, 21);
+            this.cbDisGrafico.TabIndex = 1;
+            this.cbDisGrafico.Text = "0";
+            // 
+            // cbImagenes
+            // 
+            this.cbImagenes.FormattingEnabled = true;
+            this.cbImagenes.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbImagenes.Location = new System.Drawing.Point(102, 317);
+            this.cbImagenes.Name = "cbImagenes";
+            this.cbImagenes.Size = new System.Drawing.Size(121, 21);
+            this.cbImagenes.TabIndex = 6;
+            this.cbImagenes.Text = "0";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(15, 19);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(292, 234);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label34);
+            this.groupBox3.Controls.Add(this.cbOrientacion);
+            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Location = new System.Drawing.Point(346, 54);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(315, 394);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Orientación";
+            // 
+            // cbOrientacion
+            // 
+            this.cbOrientacion.FormattingEnabled = true;
+            this.cbOrientacion.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbOrientacion.Location = new System.Drawing.Point(102, 317);
+            this.cbOrientacion.Name = "cbOrientacion";
+            this.cbOrientacion.Size = new System.Drawing.Size(121, 21);
+            this.cbOrientacion.TabIndex = 6;
+            this.cbOrientacion.Text = "0";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.cbAreaNav);
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Location = new System.Drawing.Point(10, 54);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(315, 394);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Área de navegación";
+            // 
+            // cbAreaNav
+            // 
+            this.cbAreaNav.FormattingEnabled = true;
+            this.cbAreaNav.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbAreaNav.Location = new System.Drawing.Point(100, 317);
+            this.cbAreaNav.Name = "cbAreaNav";
+            this.cbAreaNav.Size = new System.Drawing.Size(121, 21);
+            this.cbAreaNav.TabIndex = 1;
+            this.cbAreaNav.Text = "0";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(13, 19);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(292, 207);
+            this.textBox10.TabIndex = 0;
+            this.textBox10.Text = resources.GetString("textBox10.Text");
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(279, 15);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(141, 29);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Navegación";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.cbInter);
+            this.groupBox5.Controls.Add(this.textBox11);
+            this.groupBox5.Location = new System.Drawing.Point(346, 54);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(315, 394);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Internacionalización";
+            // 
+            // cbInter
+            // 
+            this.cbInter.FormattingEnabled = true;
+            this.cbInter.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbInter.Location = new System.Drawing.Point(102, 317);
+            this.cbInter.Name = "cbInter";
+            this.cbInter.Size = new System.Drawing.Size(121, 21);
+            this.cbInter.TabIndex = 6;
+            this.cbInter.Text = "0";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(15, 19);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(292, 192);
+            this.textBox11.TabIndex = 5;
+            this.textBox11.Text = resources.GetString("textBox11.Text");
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.cbInformacion);
+            this.groupBox6.Controls.Add(this.textBox12);
+            this.groupBox6.Location = new System.Drawing.Point(10, 54);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(315, 394);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Información";
+            // 
+            // cbInformacion
+            // 
+            this.cbInformacion.FormattingEnabled = true;
+            this.cbInformacion.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbInformacion.Location = new System.Drawing.Point(100, 317);
+            this.cbInformacion.Name = "cbInformacion";
+            this.cbInformacion.Size = new System.Drawing.Size(121, 21);
+            this.cbInformacion.TabIndex = 1;
+            this.cbInformacion.Text = "0";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(13, 19);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(292, 192);
+            this.textBox12.TabIndex = 0;
+            this.textBox12.Text = resources.GetString("textBox12.Text");
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(279, 15);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(124, 29);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Contenido";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label38);
+            this.groupBox7.Controls.Add(this.cbResultadosBusq);
+            this.groupBox7.Controls.Add(this.textBox16);
+            this.groupBox7.Location = new System.Drawing.Point(346, 54);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(315, 394);
+            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Resultados de Búsqueda";
+            // 
+            // cbResultadosBusq
+            // 
+            this.cbResultadosBusq.FormattingEnabled = true;
+            this.cbResultadosBusq.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbResultadosBusq.Location = new System.Drawing.Point(102, 317);
+            this.cbResultadosBusq.Name = "cbResultadosBusq";
+            this.cbResultadosBusq.Size = new System.Drawing.Size(121, 21);
+            this.cbResultadosBusq.TabIndex = 6;
+            this.cbResultadosBusq.Text = "0";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(15, 19);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(292, 219);
+            this.textBox16.TabIndex = 5;
+            this.textBox16.Text = resources.GetString("textBox16.Text");
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.cbAreaBusq);
+            this.groupBox8.Controls.Add(this.textBox17);
+            this.groupBox8.Location = new System.Drawing.Point(10, 54);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(315, 394);
+            this.groupBox8.TabIndex = 5;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Área de Búsqueda";
+            // 
+            // cbAreaBusq
+            // 
+            this.cbAreaBusq.FormattingEnabled = true;
+            this.cbAreaBusq.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbAreaBusq.Location = new System.Drawing.Point(100, 317);
+            this.cbAreaBusq.Name = "cbAreaBusq";
+            this.cbAreaBusq.Size = new System.Drawing.Size(121, 21);
+            this.cbAreaBusq.TabIndex = 1;
+            this.cbAreaBusq.Text = "0";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(13, 19);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(292, 219);
+            this.textBox17.TabIndex = 0;
+            this.textBox17.Text = resources.GetString("textBox17.Text");
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(279, 15);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(122, 29);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Búsqueda";
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(34, 285);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(236, 30);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label32
+            // 
+            this.label32.Location = new System.Drawing.Point(35, 284);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(236, 30);
+            this.label32.TabIndex = 6;
+            this.label32.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(46, 284);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(236, 30);
+            this.label33.TabIndex = 6;
+            this.label33.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label34
+            // 
+            this.label34.Location = new System.Drawing.Point(46, 284);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(236, 30);
+            this.label34.TabIndex = 8;
+            this.label34.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label35
+            // 
+            this.label35.Location = new System.Drawing.Point(44, 284);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(236, 30);
+            this.label35.TabIndex = 6;
+            this.label35.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label36
+            // 
+            this.label36.Location = new System.Drawing.Point(41, 284);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(236, 30);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(43, 284);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(236, 30);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label38
+            // 
+            this.label38.Location = new System.Drawing.Point(42, 284);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(236, 30);
+            this.label38.TabIndex = 7;
+            this.label38.Text = "Califique según su criterio, basandose en \r\nlas preguntas antes propuestas\r\n";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(15, 19);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(292, 207);
+            this.textBox3.TabIndex = 5;
+            this.textBox3.Text = resources.GetString("textBox3.Text");
             // 
             // FormEH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 492);
+            this.ClientSize = new System.Drawing.Size(698, 492);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormEH";
             this.Text = "Evaluación Heurística";
@@ -657,6 +1167,30 @@
             this.tabInicio.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.tabDisenio.ResumeLayout(false);
+            this.tabDisenio.PerformLayout();
+            this.tabNavegacion.ResumeLayout(false);
+            this.tabNavegacion.PerformLayout();
+            this.tabCont.ResumeLayout(false);
+            this.tabCont.PerformLayout();
+            this.tabBusqueda.ResumeLayout(false);
+            this.tabBusqueda.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -712,6 +1246,42 @@
         private System.Windows.Forms.TabPage tabNavegacion;
         private System.Windows.Forms.TabPage tabCont;
         private System.Windows.Forms.TabPage tabBusqueda;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbDisGrafico;
+        private System.Windows.Forms.ComboBox cbImagenes;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox cbOrientacion;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox cbAreaNav;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ComboBox cbInter;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.ComboBox cbInformacion;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ComboBox cbResultadosBusq;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.ComboBox cbAreaBusq;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
