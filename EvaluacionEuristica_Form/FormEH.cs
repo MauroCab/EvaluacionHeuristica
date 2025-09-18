@@ -21,6 +21,10 @@ namespace EvaluacionEuristica_Form
         int NotaMaxIntern;
         int NotaMaxArBusq;
         int NotaMaxRes;
+
+        /// <summary>
+        /// Actualiza el valor máximo de las notas según lo elegido en los comboBox de configuración. Actualiza el label de NotaMaxima.
+        /// </summary>
         public void CalcNotaMax()
         {
             NotaMaxDisGr = Convert.ToInt32(cBoxDisGr.Text); NotaMaxImag = Convert.ToInt32(cBoxImag.Text);
@@ -70,7 +74,7 @@ namespace EvaluacionEuristica_Form
             }
             else if (Num <= 69.99f)
             {
-                MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero no podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (Num <= 79.99f)
             {
