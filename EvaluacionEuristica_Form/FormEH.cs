@@ -22,10 +22,27 @@ namespace EvaluacionEuristica_Form
         int NotaMaxArBusq;
         int NotaMaxRes;
         public void CalcNotaMax()
-        { NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes; }
+        {
+            NotaMaxDisGr = Convert.ToInt32(cBoxDisGr.Text); NotaMaxImag = Convert.ToInt32(cBoxImag.Text);
+            NotaMaxArNav = Convert.ToInt32(cBoxArNav.Text); NotaMaxOri = Convert.ToInt32(cBoxOri.Text);
+            NotaMaxInfo = Convert.ToInt32(cBoxInfo.Text); NotaMaxIntern = Convert.ToInt32(cBoxIntern.Text);
+            NotaMaxArBusq = Convert.ToInt32(cBoxArBusq.Text); NotaMaxRes = Convert.ToInt32(cBoxRes.Text);
+            NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes;
+            lbCnfNotaMax.Text = NotaMax.ToString();
+        }
+        
         public FormEH()
         {
             InitializeComponent();
+            cBoxDisGr.SelectedItem = "10";
+            cBoxImag.SelectedItem = "10";
+            cBoxArNav.SelectedItem = "10";
+            cBoxOri.SelectedItem = "10";
+            cBoxInfo.SelectedItem = "10";
+            cBoxIntern.SelectedItem = "10";
+            cBoxArBusq.SelectedItem = "10";
+            cBoxRes.SelectedItem = "10";
+            CalcNotaMax();
         }
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
@@ -112,11 +129,7 @@ namespace EvaluacionEuristica_Form
         {
             if (cBoxDisGr.Text != "" && cBoxImag.Text != "" && cBoxArNav.Text != "" && cBoxOri.Text != "" && cBoxInfo.Text != "" && cBoxIntern.Text != "" && cBoxArBusq.Text != "" && cBoxRes.Text != "")
             {
-                NotaMaxDisGr = Convert.ToInt32(cBoxDisGr.Text); NotaMaxImag = Convert.ToInt32(cBoxImag.Text);
-                NotaMaxArNav = Convert.ToInt32(cBoxArNav.Text); NotaMaxOri = Convert.ToInt32(cBoxOri.Text);
-                NotaMaxInfo = Convert.ToInt32(cBoxInfo.Text); NotaMaxIntern = Convert.ToInt32(cBoxIntern.Text);
-                NotaMaxArBusq = Convert.ToInt32(cBoxArBusq.Text); NotaMaxRes = Convert.ToInt32(cBoxRes.Text);
-                CalcNotaMax();
+                 CalcNotaMax();
                 lbCnfNotaMax.Text = NotaMax.ToString();
             }
             else
@@ -128,6 +141,31 @@ namespace EvaluacionEuristica_Form
         private void button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 4;
+        }
+
+        private void btInicio1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void btInicio3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void btInicio4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
         }
     }
 }

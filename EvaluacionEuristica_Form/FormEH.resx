@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox16.Text" xml:space="preserve">
+    <value>¿Los resultados se presentan de manera clara, con información relevante? 
+¿Existen filtros y opciones de ordenamiento para refinar la búsqueda? 
+¿El sistema resalta las palabras clave buscadas dentro de los resultados? 
+¿Los resultados son relevantes y ordenados de acuerdo con la consulta realizada? 
+¿El formato de presentación de los resultados es claro y facilita la comparación? 
+¿La cantidad de resultados mostrados por página es adecuada y manejable? 
+¿Se presenta información suficiente en cada resultado para decidir si es útil? 
+¿Los resultados irrelevantes o duplicados están minimizados?
+</value>
+  </data>
   <data name="textBox2.Text" xml:space="preserve">
     <value>¿Formato de compresión jpg, png, svg, etcétera? 
 ¿Las imágenes se ajustan al contenedor? 
@@ -178,17 +189,6 @@ contextos culturales? </value>
 ¿La jerarquía de la información está organizada de manera que lo más importante 
 sea visible primero? 
 ¿El contenido evita redundancias y mantiene un estilo conciso?</value>
-  </data>
-  <data name="textBox16.Text" xml:space="preserve">
-    <value>¿Los resultados se presentan de manera clara, con información relevante? 
-¿Existen filtros y opciones de ordenamiento para refinar la búsqueda? 
-¿El sistema resalta las palabras clave buscadas dentro de los resultados? 
-¿Los resultados son relevantes y ordenados de acuerdo con la consulta realizada? 
-¿El formato de presentación de los resultados es claro y facilita la comparación? 
-¿La cantidad de resultados mostrados por página es adecuada y manejable? 
-¿Se presenta información suficiente en cada resultado para decidir si es útil? 
-¿Los resultados irrelevantes o duplicados están minimizados?
-</value>
   </data>
   <data name="textBox17.Text" xml:space="preserve">
     <value>¿Es sencillo buscar información? 
