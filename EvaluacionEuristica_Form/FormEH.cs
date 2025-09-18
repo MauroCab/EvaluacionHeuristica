@@ -26,6 +26,8 @@ namespace EvaluacionEuristica_Form
         public FormEH()
         {
             InitializeComponent();
+            tabsInterfaz.ItemSize = new System.Drawing.Size(0, 1);
+            tabsInterfaz.SizeMode = TabSizeMode.Fixed;
         }
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
