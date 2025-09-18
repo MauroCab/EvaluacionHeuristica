@@ -30,29 +30,29 @@ namespace EvaluacionEuristica_Form
             NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes;
             lbCnfNotaMax.Text = NotaMax.ToString();
         }
-        public void MensajeResultado(int Num)
+        public void MensajeResultado(float Num)
         {
-            if (Num <= 39)
+            if (Num <= 39.9)
             {
                 MessageBox.Show("La página tiene una usabilidad penosa.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 54)
+            else if (Num <= 54.9)
             {
                 MessageBox.Show("La página tiene una usabilidad mediocre.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 69)
+            else if (Num <= 69.9)
             {
                 MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero no podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 79)
+            else if (Num <= 79.9)
             {
                 MessageBox.Show("La página goza de un buen nivel de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 94)
+            else if (Num <= 94.9)
             {
                 MessageBox.Show("La página está diseñada de una manera muy profesional, aportando un nivel sustancial de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Num <= 100)
+            else if (Num <= 100.0)
             {
                 MessageBox.Show("La página es una oda a las heurísticas de Nielsen, cuenta con todo lo que tiene que tener y es prácticamente perfecta en cuestiones de usabilidad.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
