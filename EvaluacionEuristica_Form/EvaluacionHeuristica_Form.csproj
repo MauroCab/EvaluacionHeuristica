@@ -46,52 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBusq.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusq.Designer.cs">
-      <DependentUpon>FormBusq.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCont.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCont.Designer.cs">
-      <DependentUpon>FormCont.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormDiseño.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDiseño.Designer.cs">
-      <DependentUpon>FormDiseño.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEH.Designer.cs">
       <DependentUpon>FormEH.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNav.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNav.Designer.cs">
-      <DependentUpon>FormNav.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBusq.resx">
-      <DependentUpon>FormBusq.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCont.resx">
-      <DependentUpon>FormCont.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormDiseño.resx">
-      <DependentUpon>FormDiseño.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormEH.resx">
       <DependentUpon>FormEH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNav.resx">
-      <DependentUpon>FormNav.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
