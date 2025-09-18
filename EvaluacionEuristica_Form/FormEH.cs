@@ -170,5 +170,45 @@ namespace EvaluacionEuristica_Form
         {
             tabsInterfaz.SelectedIndex = 0;
         }
+
+        private void btConfig_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 1;
+        }
+
+        private void btSiguiente_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 3;
+        }
+
+        private void btSiguiente1_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 4;
+        }
+
+        private void btSiguiente2_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 5;
+        }
+
+        private void btFinalizar_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 0;
+        }
+
+        private void btAtras1_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 2;
+        }
+
+        private void btAtras2_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 3;
+        }
+
+        private void btAtras3_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 4;
+        }
     }
 }
