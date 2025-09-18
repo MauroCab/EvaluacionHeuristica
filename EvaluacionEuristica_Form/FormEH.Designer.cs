@@ -74,6 +74,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabConfig = new System.Windows.Forms.TabPage();
+            this.btInicio1 = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.lbCnfNotaMax = new System.Windows.Forms.Label();
             this.lbCnfNM = new System.Windows.Forms.Label();
@@ -142,6 +143,10 @@
             this.cbAreaBusq = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.btInicio2 = new System.Windows.Forms.Button();
+            this.btInicio3 = new System.Windows.Forms.Button();
+            this.btInicio4 = new System.Windows.Forms.Button();
+            this.btInicio5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -379,6 +384,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "Evaluar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox9
             // 
@@ -675,6 +681,7 @@
             // tabConfig
             // 
             this.tabConfig.BackColor = System.Drawing.SystemColors.Control;
+            this.tabConfig.Controls.Add(this.btInicio1);
             this.tabConfig.Controls.Add(this.textBox18);
             this.tabConfig.Controls.Add(this.lbCnfNotaMax);
             this.tabConfig.Controls.Add(this.lbCnfNM);
@@ -689,6 +696,17 @@
             this.tabConfig.Size = new System.Drawing.Size(691, 483);
             this.tabConfig.TabIndex = 1;
             this.tabConfig.Text = "Config";
+            // 
+            // btInicio1
+            // 
+            this.btInicio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio1.Location = new System.Drawing.Point(764, 536);
+            this.btInicio1.Name = "btInicio1";
+            this.btInicio1.Size = new System.Drawing.Size(115, 29);
+            this.btInicio1.TabIndex = 40;
+            this.btInicio1.Text = "Inicio";
+            this.btInicio1.UseVisualStyleBackColor = true;
+            this.btInicio1.Click += new System.EventHandler(this.btInicio1_Click);
             // 
             // textBox18
             // 
@@ -811,7 +829,8 @@
             // BttSaveConfig
             // 
             this.BttSaveConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttSaveConfig.Location = new System.Drawing.Point(584, 408);
+            this.BttSaveConfig.Location = new System.Drawing.Point(413, 502);
+            this.BttSaveConfig.Margin = new System.Windows.Forms.Padding(4);
             this.BttSaveConfig.Name = "BttSaveConfig";
             this.BttSaveConfig.Size = new System.Drawing.Size(75, 28);
             this.BttSaveConfig.TabIndex = 11;
@@ -1089,6 +1108,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btInicio2);
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.cbImagenes);
             this.groupBox2.Controls.Add(this.textBox2);
@@ -1110,6 +1130,7 @@
             // 
             // cbImagenes
             // 
+            this.cbImagenes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbImagenes.FormattingEnabled = true;
             this.cbImagenes.Items.AddRange(new object[] {
             "1",
@@ -1126,7 +1147,6 @@
             this.cbImagenes.Name = "cbImagenes";
             this.cbImagenes.Size = new System.Drawing.Size(121, 21);
             this.cbImagenes.TabIndex = 6;
-            this.cbImagenes.Text = "0";
             // 
             // textBox2
             // 
@@ -1162,6 +1182,7 @@
             // 
             // cbDisGrafico
             // 
+            this.cbDisGrafico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDisGrafico.FormattingEnabled = true;
             this.cbDisGrafico.Items.AddRange(new object[] {
             "1",
@@ -1178,7 +1199,6 @@
             this.cbDisGrafico.Name = "cbDisGrafico";
             this.cbDisGrafico.Size = new System.Drawing.Size(121, 21);
             this.cbDisGrafico.TabIndex = 1;
-            this.cbDisGrafico.Text = "0";
             // 
             // textBox1
             // 
@@ -1214,6 +1234,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btInicio3);
             this.groupBox3.Controls.Add(this.label34);
             this.groupBox3.Controls.Add(this.cbOrientacion);
             this.groupBox3.Controls.Add(this.textBox3);
@@ -1235,6 +1256,7 @@
             // 
             // cbOrientacion
             // 
+            this.cbOrientacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOrientacion.FormattingEnabled = true;
             this.cbOrientacion.Items.AddRange(new object[] {
             "1",
@@ -1251,7 +1273,6 @@
             this.cbOrientacion.Name = "cbOrientacion";
             this.cbOrientacion.Size = new System.Drawing.Size(121, 21);
             this.cbOrientacion.TabIndex = 6;
-            this.cbOrientacion.Text = "0";
             // 
             // textBox3
             // 
@@ -1286,6 +1307,7 @@
             // 
             // cbAreaNav
             // 
+            this.cbAreaNav.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAreaNav.FormattingEnabled = true;
             this.cbAreaNav.Items.AddRange(new object[] {
             "1",
@@ -1302,7 +1324,6 @@
             this.cbAreaNav.Name = "cbAreaNav";
             this.cbAreaNav.Size = new System.Drawing.Size(121, 21);
             this.cbAreaNav.TabIndex = 1;
-            this.cbAreaNav.Text = "0";
             // 
             // textBox10
             // 
@@ -1338,6 +1359,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btInicio4);
             this.groupBox5.Controls.Add(this.label36);
             this.groupBox5.Controls.Add(this.cbInter);
             this.groupBox5.Controls.Add(this.textBox11);
@@ -1359,6 +1381,7 @@
             // 
             // cbInter
             // 
+            this.cbInter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbInter.FormattingEnabled = true;
             this.cbInter.Items.AddRange(new object[] {
             "1",
@@ -1375,7 +1398,6 @@
             this.cbInter.Name = "cbInter";
             this.cbInter.Size = new System.Drawing.Size(121, 21);
             this.cbInter.TabIndex = 6;
-            this.cbInter.Text = "0";
             // 
             // textBox11
             // 
@@ -1410,6 +1432,7 @@
             // 
             // cbInformacion
             // 
+            this.cbInformacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbInformacion.FormattingEnabled = true;
             this.cbInformacion.Items.AddRange(new object[] {
             "1",
@@ -1426,7 +1449,6 @@
             this.cbInformacion.Name = "cbInformacion";
             this.cbInformacion.Size = new System.Drawing.Size(121, 21);
             this.cbInformacion.TabIndex = 1;
-            this.cbInformacion.Text = "0";
             // 
             // textBox12
             // 
@@ -1462,6 +1484,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.btInicio5);
             this.groupBox7.Controls.Add(this.label38);
             this.groupBox7.Controls.Add(this.cbResultadosBusq);
             this.groupBox7.Controls.Add(this.textBox16);
@@ -1483,6 +1506,7 @@
             // 
             // cbResultadosBusq
             // 
+            this.cbResultadosBusq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbResultadosBusq.FormattingEnabled = true;
             this.cbResultadosBusq.Items.AddRange(new object[] {
             "1",
@@ -1499,7 +1523,6 @@
             this.cbResultadosBusq.Name = "cbResultadosBusq";
             this.cbResultadosBusq.Size = new System.Drawing.Size(121, 21);
             this.cbResultadosBusq.TabIndex = 6;
-            this.cbResultadosBusq.Text = "0";
             // 
             // textBox16
             // 
@@ -1534,6 +1557,7 @@
             // 
             // cbAreaBusq
             // 
+            this.cbAreaBusq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAreaBusq.FormattingEnabled = true;
             this.cbAreaBusq.Items.AddRange(new object[] {
             "1",
@@ -1550,7 +1574,6 @@
             this.cbAreaBusq.Name = "cbAreaBusq";
             this.cbAreaBusq.Size = new System.Drawing.Size(121, 21);
             this.cbAreaBusq.TabIndex = 1;
-            this.cbAreaBusq.Text = "0";
             // 
             // textBox17
             // 
@@ -1571,6 +1594,50 @@
             this.label26.Size = new System.Drawing.Size(122, 29);
             this.label26.TabIndex = 4;
             this.label26.Text = "Búsqueda";
+            // 
+            // btInicio2
+            // 
+            this.btInicio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio2.Location = new System.Drawing.Point(305, 456);
+            this.btInicio2.Name = "btInicio2";
+            this.btInicio2.Size = new System.Drawing.Size(115, 29);
+            this.btInicio2.TabIndex = 41;
+            this.btInicio2.Text = "Inicio";
+            this.btInicio2.UseVisualStyleBackColor = true;
+            this.btInicio2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btInicio3
+            // 
+            this.btInicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio3.Location = new System.Drawing.Point(305, 456);
+            this.btInicio3.Name = "btInicio3";
+            this.btInicio3.Size = new System.Drawing.Size(115, 29);
+            this.btInicio3.TabIndex = 42;
+            this.btInicio3.Text = "Inicio";
+            this.btInicio3.UseVisualStyleBackColor = true;
+            this.btInicio3.Click += new System.EventHandler(this.btInicio3_Click);
+            // 
+            // btInicio4
+            // 
+            this.btInicio4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio4.Location = new System.Drawing.Point(305, 456);
+            this.btInicio4.Name = "btInicio4";
+            this.btInicio4.Size = new System.Drawing.Size(115, 29);
+            this.btInicio4.TabIndex = 42;
+            this.btInicio4.Text = "Inicio";
+            this.btInicio4.UseVisualStyleBackColor = true;
+            this.btInicio4.Click += new System.EventHandler(this.btInicio4_Click);
+            // 
+            // btInicio5
+            // 
+            this.btInicio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicio5.Location = new System.Drawing.Point(305, 456);
+            this.btInicio5.Name = "btInicio5";
+            this.btInicio5.Size = new System.Drawing.Size(115, 29);
+            this.btInicio5.TabIndex = 43;
+            this.btInicio5.Text = "Inicio";
+            this.btInicio5.UseVisualStyleBackColor = true;
+            this.btInicio5.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FormEH
             // 
@@ -1749,6 +1816,11 @@
         private System.Windows.Forms.ComboBox cBoxArNav;
         private System.Windows.Forms.ComboBox cBoxOri;
         private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Button btInicio1;
+        private System.Windows.Forms.Button btInicio2;
+        private System.Windows.Forms.Button btInicio3;
+        private System.Windows.Forms.Button btInicio4;
+        private System.Windows.Forms.Button btInicio5;
     }
 }
 
