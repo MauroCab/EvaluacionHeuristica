@@ -22,6 +22,14 @@ namespace EvaluacionEuristica_Form
         int NotaMaxArBusq;
         int NotaMaxRes;
 
+       public float PorcMaxDisenoGrafico;
+       public float PorcMaxImagen;
+       public float PorcMaxAreaNav;
+       public float PorcMaxOrientacion;
+       public float PorcMaxInformacion;
+       public float PorcMaxInter;
+       public float PorcMaxAreaBusq;
+       public float PorcMaxResultadoBusq;
         /// <summary>
         /// Actualiza el valor máximo de las notas según lo elegido en los comboBox de configuración. Actualiza el label de NotaMaxima.
         /// </summary>
@@ -61,7 +69,17 @@ namespace EvaluacionEuristica_Form
                 tabsInterfaz.SelectedIndex = 0;
             }
         }
-
+        public void ActualizarPorcentajesMaximos()
+        {
+            PorcMaxDisenoGrafico = ((NotaMaxDisGr * 100) / NotaMax);
+            PorcMaxImagen = ((NotaMaxImag * 100) / NotaMax);
+            PorcMaxAreaNav = ((NotaMaxArNav * 100) / NotaMax);
+            PorcMaxOrientacion = ((NotaMaxOri * 100) / NotaMax);
+            PorcMaxInformacion = ((NotaMaxInfo * 100) / NotaMax);
+            PorcMaxInter = ((NotaMaxIntern * 100) / NotaMax);
+            PorcMaxAreaBusq = ((NotaMaxArBusq * 100) / NotaMax);
+            PorcMaxResultadoBusq = ((NotaMaxRes * 100) / NotaMax);
+        }
         public void MensajeResultado(float Num)
         {
             if (Num <= 39.99f)
