@@ -21,7 +21,7 @@ namespace EvaluacionEuristica_Form
         int NotaMaxIntern;
         int NotaMaxArBusq;
         int NotaMaxRes;
-        void CalcNotaMax()
+        public void CalcNotaMax()
         { NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes; }
         public FormEH()
         {

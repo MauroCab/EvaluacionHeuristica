@@ -74,6 +74,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabConfig = new System.Windows.Forms.TabPage();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.lbCnfNotaMax = new System.Windows.Forms.Label();
             this.lbCnfNM = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -141,7 +142,6 @@
             this.cbAreaBusq = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -733,6 +733,18 @@
             this.tabConfig.Size = new System.Drawing.Size(897, 572);
             this.tabConfig.TabIndex = 1;
             this.tabConfig.Text = "Config";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(13, 10);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(866, 73);
+            this.textBox18.TabIndex = 39;
+            this.textBox18.Text = "Coloque una nota máxima del 1 al 10 según la importancia de cada característica q" +
+    "ue considera usted debe cumplirse en la página, según la función de esa página.";
             // 
             // lbCnfNotaMax
             // 
@@ -1662,24 +1674,15 @@
             this.label26.TabIndex = 4;
             this.label26.Text = "Búsqueda";
             // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(13, 10);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(866, 73);
-            this.textBox18.TabIndex = 39;
-            this.textBox18.Text = "Coloque una nota máxima del 1 al 10 según la importancia de cada característica q" +
-    "ue considera usted debe cumplirse en la página, según la función de esa página.";
-            // 
             // FormEH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 606);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FormEH";
             this.Text = "Evaluación Heurística";
             this.panel1.ResumeLayout(false);
