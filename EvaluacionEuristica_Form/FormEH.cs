@@ -43,6 +43,8 @@ namespace EvaluacionEuristica_Form
             cBoxArBusq.SelectedItem = "10";
             cBoxRes.SelectedItem = "10";
             CalcNotaMax();
+            tabsInterfaz.ItemSize = new System.Drawing.Size(0, 1);
+            tabsInterfaz.SizeMode = TabSizeMode.Fixed;
         }
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
