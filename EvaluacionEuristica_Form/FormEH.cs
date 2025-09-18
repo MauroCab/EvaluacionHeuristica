@@ -30,6 +30,34 @@ namespace EvaluacionEuristica_Form
             NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes;
             lbCnfNotaMax.Text = NotaMax.ToString();
         }
+        /// <summary>
+        /// Resetea los valores elegidos de las comboBox de las calificaciones en base a las preguntas a null.
+        /// </summary>
+        public void ResetCalificaciones()
+        {
+            cbDisGrafico.SelectedItem = null;
+            cbImagenes.SelectedItem = null;
+            cbAreaNav.SelectedItem = null;
+            cbOrientacion.SelectedItem = null;
+            cbInformacion.SelectedItem = null;
+            cbInter.SelectedItem = null;
+            cbAreaBusq.SelectedItem = null;
+            cbResultadosBusq.SelectedItem = null;
+        }
+        /// <summary>
+        /// Convoca un messageBox para confirmar si el usuario quiere volver a la página de inicio sin guardar datos de calificación.
+        /// </summary>
+        public void ConfirmacionVolver()
+        {
+            DialogResult resultado = MessageBox.Show("¿Seguro que querés volver a inicio? Las calificaciones seleccionadas no se guardarán.", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                ResetCalificaciones();
+                tabsInterfaz.SelectedIndex = 0;
+            }
+        }
+
         public void MensajeResultado(float Num)
         {
             if (Num <= 39.9)
@@ -75,6 +103,7 @@ namespace EvaluacionEuristica_Form
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
         {
+            ResetCalificaciones();
             tabsInterfaz.SelectedIndex = 2;
         }
 
@@ -165,6 +194,7 @@ namespace EvaluacionEuristica_Form
             {
                 CalcNotaMax();
                 lbCnfNotaMax.Text = NotaMax.ToString();
+                MessageBox.Show("La configuración se guardó exitosamente.", "Guardado con Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -179,22 +209,22 @@ namespace EvaluacionEuristica_Form
 
         private void btInicio2_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            ConfirmacionVolver();
         }
 
         private void btInicio3_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            ConfirmacionVolver();
         }
 
         private void btInicio4_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            ConfirmacionVolver();
         }
 
         private void btInicio5_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            ConfirmacionVolver();
         }
 
         private void btConfig_Click(object sender, EventArgs e)
@@ -219,7 +249,14 @@ namespace EvaluacionEuristica_Form
 
         private void btFinalizar_Click(object sender, EventArgs e)
         {
-            tabsInterfaz.SelectedIndex = 0;
+            if (cbDisGrafico.Text != "" && cbImagenes.Text != "" && cbAreaNav.Text != "" && cbOrientacion.Text != "" && cbInformacion.Text != "" && cbInter.Text != "" && cbAreaBusq.Text != "" && cbResultadosBusq.Text != "")
+            {
+                tabsInterfaz.SelectedIndex = 0;
+            }
+            else
+            {
+                MessageBox.Show("Uno o más criterios no fueron calificados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btAtras1_Click(object sender, EventArgs e)
