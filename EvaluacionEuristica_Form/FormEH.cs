@@ -47,12 +47,12 @@ namespace EvaluacionEuristica_Form
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 2;
+            tabsInterfaz.SelectedIndex = 2;
         }
 
         private void btnEvaluarNav_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 3;
+            tabsInterfaz.SelectedIndex = 3;
         }
 
         private void btnEvaluarCont_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace EvaluacionEuristica_Form
 
         private void btnEvaluarBusq_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 5;
+            tabsInterfaz.SelectedIndex = 5;
         }
 
         private void Title_Click(object sender, EventArgs e)
@@ -125,11 +125,17 @@ namespace EvaluacionEuristica_Form
 
         }
 
-        private void BttSaveConfig_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabsInterfaz.SelectedIndex = 4;
+        }
+
+        private void btGUARDAR_Click(object sender, EventArgs e)
         {
             if (cBoxDisGr.Text != "" && cBoxImag.Text != "" && cBoxArNav.Text != "" && cBoxOri.Text != "" && cBoxInfo.Text != "" && cBoxIntern.Text != "" && cBoxArBusq.Text != "" && cBoxRes.Text != "")
             {
-                 CalcNotaMax();
+                CalcNotaMax();
                 lbCnfNotaMax.Text = NotaMax.ToString();
             }
             else
@@ -138,34 +144,29 @@ namespace EvaluacionEuristica_Form
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btInicio_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 4;
+            tabsInterfaz.SelectedIndex = 0;
         }
 
-        private void btInicio1_Click(object sender, EventArgs e)
+        private void btInicio2_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 0;
+            tabsInterfaz.SelectedIndex = 0;
         }
 
         private void btInicio3_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            tabsInterfaz.SelectedIndex = 0;
         }
 
         private void btInicio4_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            tabsInterfaz.SelectedIndex = 0;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btInicio5_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            tabsInterfaz.SelectedIndex = 0;
         }
     }
 }
