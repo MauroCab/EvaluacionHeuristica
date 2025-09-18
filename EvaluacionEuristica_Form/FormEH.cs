@@ -21,6 +21,8 @@ namespace EvaluacionEuristica_Form
         int NotaMaxIntern;
         int NotaMaxArBusq;
         int NotaMaxRes;
+        void CalcNotaMax()
+        { NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes; }
         public FormEH()
         {
             InitializeComponent();
@@ -114,7 +116,7 @@ namespace EvaluacionEuristica_Form
                 NotaMaxArNav = Convert.ToInt32(cBoxArNav.Text); NotaMaxOri = Convert.ToInt32(cBoxOri.Text);
                 NotaMaxInfo = Convert.ToInt32(cBoxInfo.Text); NotaMaxIntern = Convert.ToInt32(cBoxIntern.Text);
                 NotaMaxArBusq = Convert.ToInt32(cBoxArBusq.Text); NotaMaxRes = Convert.ToInt32(cBoxRes.Text);
-                NotaMax = NotaMaxDisGr + NotaMaxImag + NotaMaxArNav + NotaMaxOri + NotaMaxInfo + NotaMaxIntern + NotaMaxArBusq + NotaMaxRes;
+                CalcNotaMax();
                 lbCnfNotaMax.Text = NotaMax.ToString();
             }
             else
