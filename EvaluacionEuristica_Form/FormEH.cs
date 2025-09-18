@@ -7,20 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Biblioteca;
 
 namespace EvaluacionEuristica_Form
 {
     public partial class FormEH : Form
     {
-        int NotaMax;
-        int NotaMaxDisGr;
-        int NotaMaxImag;
-        int NotaMaxArNav;
-        int NotaMaxOri;
-        int NotaMaxInfo;
-        int NotaMaxIntern;
-        int NotaMaxArBusq;
-        int NotaMaxRes;
+        public int NotaMax;
+        public int NotaMaxDisGr;
+        public int NotaMaxImag;
+        public int NotaMaxArNav;
+        public int NotaMaxOri;
+        public int NotaMaxInfo;
+        public int NotaMaxIntern;
+        public int NotaMaxArBusq;
+        public int NotaMaxRes;
+
+        public float PorcMaxDisenoGrafico;
+        public float PorcMaxImagen;
+        public float PorcMaxAreaNav;
+        public float PorcMaxOrientacion;
+        public float PorcMaxInformacion;
+        public float PorcMaxInter;
+        public float PorcMaxAreaBusq;
+        public float PorcMaxResultadoBusq;
+        /// <summary>
+        /// Actualiza el valor máximo de las notas según lo elegido en los comboBox de configuración. Actualiza el label de NotaMaxima.
+        /// </summary>
         public void CalcNotaMax()
         {
             NotaMaxDisGr = Convert.ToInt32(cBoxDisGr.Text); NotaMaxImag = Convert.ToInt32(cBoxImag.Text);
@@ -57,7 +70,17 @@ namespace EvaluacionEuristica_Form
                 tabsInterfaz.SelectedIndex = 0;
             }
         }
-
+        public void ActualizarPorcentajesMaximos()
+        {
+            PorcMaxDisenoGrafico = ((NotaMaxDisGr * 100) / NotaMax);
+            PorcMaxImagen = ((NotaMaxImag * 100) / NotaMax);
+            PorcMaxAreaNav = ((NotaMaxArNav * 100) / NotaMax);
+            PorcMaxOrientacion = ((NotaMaxOri * 100) / NotaMax);
+            PorcMaxInformacion = ((NotaMaxInfo * 100) / NotaMax);
+            PorcMaxInter = ((NotaMaxIntern * 100) / NotaMax);
+            PorcMaxAreaBusq = ((NotaMaxArBusq * 100) / NotaMax);
+            PorcMaxResultadoBusq = ((NotaMaxRes * 100) / NotaMax);
+        }
         public void MensajeResultado(float Num)
         {
             if (Num <= 39.99f)
@@ -70,7 +93,7 @@ namespace EvaluacionEuristica_Form
             }
             else if (Num <= 69.99f)
             {
-                MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero no podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La página tiene cierto grado de usabilidad, es buena pero podría ser mejor.", "Resultado Final", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (Num <= 79.99f)
             {
@@ -188,19 +211,7 @@ namespace EvaluacionEuristica_Form
             tabsInterfaz.SelectedIndex = 4;
         }
 
-        private void btGUARDAR_Click(object sender, EventArgs e)
-        {
-            if (cBoxDisGr.Text != "" && cBoxImag.Text != "" && cBoxArNav.Text != "" && cBoxOri.Text != "" && cBoxInfo.Text != "" && cBoxIntern.Text != "" && cBoxArBusq.Text != "" && cBoxRes.Text != "")
-            {
-                CalcNotaMax();
-                lbCnfNotaMax.Text = NotaMax.ToString();
-                MessageBox.Show("La configuración se guardó exitosamente.", "Guardado con Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Un valor máximo de una o más características no fue seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         private void btInicio_Click(object sender, EventArgs e)
         {
@@ -286,5 +297,27 @@ namespace EvaluacionEuristica_Form
         {
             tabsInterfaz.SelectedIndex = 4;
         }
+
+        #region Lógica Interna
+
+        private void btGUARDAR_Click(object sender, EventArgs e)
+        {
+            if (cBoxDisGr.Text != "" && cBoxImag.Text != "" && cBoxArNav.Text != "" && cBoxOri.Text != "" && cBoxInfo.Text != "" && cBoxIntern.Text != "" && cBoxArBusq.Text != "" && cBoxRes.Text != "")
+            {
+                CalcNotaMax();
+                lbCnfNotaMax.Text = NotaMax.ToString();
+                MessageBox.Show("La configuración se guardó exitosamente.", "Guardado con Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LibreriaFunciones.ConvertToPercentage(NotaMaxDisGr, NotaMax);
+            }
+            else
+            {
+                MessageBox.Show("Un valor máximo de una o más características no fue seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
+        }
+
+
+        #endregion
     }
 }
