@@ -30,12 +30,12 @@ namespace EvaluacionEuristica_Form
 
         private void btnEvaluarDiseño_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 2;
         }
 
         private void btnEvaluarNav_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 3;
         }
 
         private void btnEvaluarCont_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace EvaluacionEuristica_Form
 
         private void btnEvaluarBusq_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 5;
         }
 
         private void Title_Click(object sender, EventArgs e)
@@ -123,6 +123,11 @@ namespace EvaluacionEuristica_Form
             {
                 MessageBox.Show("Un valor máximo de una o más características no fue seleccionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 4;
         }
     }
 }

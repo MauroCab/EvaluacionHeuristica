@@ -398,6 +398,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "Evaluar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox9
             // 
@@ -1168,6 +1169,7 @@
             // 
             // cbImagenes
             // 
+            this.cbImagenes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbImagenes.FormattingEnabled = true;
             this.cbImagenes.Items.AddRange(new object[] {
             "1",
@@ -1185,7 +1187,6 @@
             this.cbImagenes.Name = "cbImagenes";
             this.cbImagenes.Size = new System.Drawing.Size(160, 24);
             this.cbImagenes.TabIndex = 6;
-            this.cbImagenes.Text = "0";
             // 
             // textBox2
             // 
@@ -1225,6 +1226,7 @@
             // 
             // cbDisGrafico
             // 
+            this.cbDisGrafico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDisGrafico.FormattingEnabled = true;
             this.cbDisGrafico.Items.AddRange(new object[] {
             "1",
@@ -1242,7 +1244,6 @@
             this.cbDisGrafico.Name = "cbDisGrafico";
             this.cbDisGrafico.Size = new System.Drawing.Size(160, 24);
             this.cbDisGrafico.TabIndex = 1;
-            this.cbDisGrafico.Text = "0";
             // 
             // textBox1
             // 
@@ -1305,6 +1306,7 @@
             // 
             // cbOrientacion
             // 
+            this.cbOrientacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOrientacion.FormattingEnabled = true;
             this.cbOrientacion.Items.AddRange(new object[] {
             "1",
@@ -1322,7 +1324,6 @@
             this.cbOrientacion.Name = "cbOrientacion";
             this.cbOrientacion.Size = new System.Drawing.Size(160, 24);
             this.cbOrientacion.TabIndex = 6;
-            this.cbOrientacion.Text = "0";
             // 
             // textBox3
             // 
@@ -1361,6 +1362,7 @@
             // 
             // cbAreaNav
             // 
+            this.cbAreaNav.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAreaNav.FormattingEnabled = true;
             this.cbAreaNav.Items.AddRange(new object[] {
             "1",
@@ -1378,7 +1380,6 @@
             this.cbAreaNav.Name = "cbAreaNav";
             this.cbAreaNav.Size = new System.Drawing.Size(160, 24);
             this.cbAreaNav.TabIndex = 1;
-            this.cbAreaNav.Text = "0";
             // 
             // textBox10
             // 
@@ -1441,6 +1442,7 @@
             // 
             // cbInter
             // 
+            this.cbInter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbInter.FormattingEnabled = true;
             this.cbInter.Items.AddRange(new object[] {
             "1",
@@ -1458,7 +1460,6 @@
             this.cbInter.Name = "cbInter";
             this.cbInter.Size = new System.Drawing.Size(160, 24);
             this.cbInter.TabIndex = 6;
-            this.cbInter.Text = "0";
             // 
             // textBox11
             // 
@@ -1497,6 +1498,7 @@
             // 
             // cbInformacion
             // 
+            this.cbInformacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbInformacion.FormattingEnabled = true;
             this.cbInformacion.Items.AddRange(new object[] {
             "1",
@@ -1514,7 +1516,6 @@
             this.cbInformacion.Name = "cbInformacion";
             this.cbInformacion.Size = new System.Drawing.Size(160, 24);
             this.cbInformacion.TabIndex = 1;
-            this.cbInformacion.Text = "0";
             // 
             // textBox12
             // 
@@ -1577,6 +1578,7 @@
             // 
             // cbResultadosBusq
             // 
+            this.cbResultadosBusq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbResultadosBusq.FormattingEnabled = true;
             this.cbResultadosBusq.Items.AddRange(new object[] {
             "1",
@@ -1594,7 +1596,6 @@
             this.cbResultadosBusq.Name = "cbResultadosBusq";
             this.cbResultadosBusq.Size = new System.Drawing.Size(160, 24);
             this.cbResultadosBusq.TabIndex = 6;
-            this.cbResultadosBusq.Text = "0";
             // 
             // textBox16
             // 
@@ -1633,6 +1634,7 @@
             // 
             // cbAreaBusq
             // 
+            this.cbAreaBusq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAreaBusq.FormattingEnabled = true;
             this.cbAreaBusq.Items.AddRange(new object[] {
             "1",
@@ -1650,7 +1652,6 @@
             this.cbAreaBusq.Name = "cbAreaBusq";
             this.cbAreaBusq.Size = new System.Drawing.Size(160, 24);
             this.cbAreaBusq.TabIndex = 1;
-            this.cbAreaBusq.Text = "0";
             // 
             // textBox17
             // 
